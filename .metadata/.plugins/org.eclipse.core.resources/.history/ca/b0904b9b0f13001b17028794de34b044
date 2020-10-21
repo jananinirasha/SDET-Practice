@@ -1,0 +1,22 @@
+package SDET.AutomationPractice;
+
+import org.testng.annotations.Test;
+
+public class MainTest extends BaseTest{
+	
+	@Test
+	
+	public void createAccount() {
+		
+		LoginPage login = new LoginPage(driver);
+		
+		
+		//Click on Login Button
+		login.clickLogin();
+		
+		
+		
+	}
+	
+
+}

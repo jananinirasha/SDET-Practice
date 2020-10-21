@@ -1,0 +1,95 @@
+package SDET.AutomationPractice;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class DetailPage extends BasePage {
+	
+	// Login Page object identification
+	@FindBy(id = "id_gender1")
+	private WebElement btnMr;
+	
+	@FindBy (id="id_gender2")
+	private WebElement btnMrs; 
+	
+	@FindBy(id = "customer_firstname")
+	private WebElement txtFirstName;
+	
+	@FindBy (id="customer_lastname")
+	private WebElement txtLastName;
+	
+	@FindBy(id = "passwd")
+	private WebElement txtPassWd;
+	
+	@FindBy (id="days")
+	private WebElement drpDays; 
+	
+	@FindBy (id="months")
+	private WebElement drpMonths; 
+	
+	@FindBy (id="years")
+	private WebElement drpYears; 
+	
+	@FindBy (id="firstname")
+	private WebElement txtAddFirstName; 
+	
+	@FindBy(id = "lastname")
+	private WebElement txtAddLastName;
+	
+	@FindBy (id="company")
+	private WebElement txtCompany;
+	
+	@FindBy(id = "address1")
+	private WebElement txtAddress1;
+	
+	
+	@FindBy (id="address2")
+	private WebElement txtAddress2; 
+	
+	@FindBy (id="city")
+	private WebElement txtCity; 
+	
+	@FindBy(id = "uniform-id_state")
+	private WebElement drpUniformState;
+	
+	@FindBy (id="postcode")
+	private WebElement txtPostCode;
+	
+	@FindBy(id = "id_country")
+	private WebElement txtCountry;
+	
+	@FindBy (id="other")
+	private WebElement txtOther; 
+	
+	@FindBy(id = "phone")
+	private WebElement txtPhone;
+	
+	@FindBy (id="phone_mobile")
+	private WebElement txtMobile;
+	
+	@FindBy(id = "alias")
+	private WebElement txtAlias;
+	
+	@FindBy(xpath="//button[@id='submitAccount']/span")
+	private WebElement btnRegister;
+	
+	@FindBy (id="optin")
+	private WebElement btnOptin;
+	
+	@FindBy(id = "newsletter")
+	private WebElement btnNewsletter;
+	
+	public DetailPage (WebDriver driver) {
+		super(driver);
+		PageFactory.initElements(driver,this);
+		
+	}
+	
+	//Fill Personal Information
+	public void fillPersonalInfo(testData) {
+		
+	}
+
+}

@@ -1,0 +1,19 @@
+package SDET.AutomationPractice;
+
+import org.testng.annotations.Test;
+
+
+
+public class MainTest extends BaseTest{
+	
+	@Test (dataProvider = "Sheet1", dataProviderClass=DataProvider.class)
+	
+	public void loadURL() {
+		// Maximize browser		 
+				driver.manage().window().maximize();		
+				driver.get("http://automationpractice.com/index.php");
+		
+	}
+	
+
+}

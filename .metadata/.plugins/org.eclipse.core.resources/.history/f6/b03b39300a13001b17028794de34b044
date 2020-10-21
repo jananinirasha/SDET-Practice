@@ -1,0 +1,45 @@
+package SDET.AutomationPractice;
+
+
+import org.testng.annotations.DataProvider;
+
+public class DataProvider {
+	
+	public static String filePath="C:\\Work Space\\AutomationPractice\\resources";
+	public static String fileName="test.xlsx";
+
+	
+	@DataProvider (name="Sheet1")
+	public static Object[][] getExpData() throws Exception
+	{
+		String sheetName="Sheet1";
+		String strURL=null;
+		String directedBy=null;
+		String originalAirdate=null;
+		String episodeNumber=null;
+
+		Object[][] inputData = null;		
+		
+		
+		ExcelReader excelReader = new ExcelReader(filePath,fileName);
+		int rows = excelReader.getRowCount(sheetName);
+		inputData = new Object[rows-1][];
+		for(int i=1;i<rows;i++)
+		{
+			strURL = excelReader.getData(sheetName, i, 0);
+			System.out.println(strURL);
+			directedBy = excelReader.getData(sheetName, i, 1);
+			System.out.println(directedBy);
+			originalAirdate = excelReader.getData(sheetName, i, 2);
+			System.out.println(originalAirdate);
+			episodeNumber= excelReader.getData(sheetName, i, 3);
+			System.out.println(episodeNumber);
+			
+			
+			inputData[i - 1] = new Object[] { strURL,directedBy,originalAirdate,episodeNumber,i };
+			
+		}
+		return inputData;
+	}
+
+}

@@ -1,0 +1,31 @@
+package SDET.AutomationPractice;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class MyPage extends BasePage {
+	
+	// Detail Page object identification
+	@FindBy(xpath = "//div[@id='center_column']/p")
+	private WebElement eleWelcome;
+	
+	
+	public MyPage (WebDriver driver) {
+		super(driver);
+		PageFactory.initElements(driver,this);
+		
+	}
+	
+	// text verification
+	
+	public String verifyWelcome() {
+		
+		String text = new String();
+		text = this.eleWelcome.getText();
+		
+		return text;
+	}
+
+}

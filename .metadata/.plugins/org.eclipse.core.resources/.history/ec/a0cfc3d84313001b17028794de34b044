@@ -1,0 +1,34 @@
+package SDET.AutomationPractice;
+
+import org.testng.annotations.Test;
+
+
+public class MainTest extends BaseTest{
+	
+	@Test
+	
+	public void createAccount() {
+		
+		LoginPage login = new LoginPage(driver);
+		AccountPage account = new AccountPage(driver);
+		
+		//Open URL
+		driver.get("http://automationpractice.com/index.php");
+		
+		//Click on Login Button
+		login.clickLogin();
+		
+		//Enter email address and click Create button
+		account.enterEmailAddress();
+		account.clickCreateAccount();
+		
+		
+		
+		
+		
+		
+		
+	}
+	
+
+}

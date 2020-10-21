@@ -1,0 +1,9 @@
+package SDET.AutomationPractice;
+
+
+
+
+
+public class MainTest extends BaseTest{
+
+}

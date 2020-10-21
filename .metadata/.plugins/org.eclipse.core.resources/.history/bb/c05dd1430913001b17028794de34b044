@@ -1,0 +1,34 @@
+package SDET.AutomationPractice;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+
+public class BaseTest {
+	
+	public WebDriver driver;
+	MainPage main;
+	 
+	
+	@BeforeTest
+	public void initial(){
+		System.setProperty("webdriver.chrome.driver", "C:\\Work Space\\AutomationPractice\\resources\\chromedriver_win32\\chromedriver.exe");
+		 
+		// Initialize browser
+		driver =new ChromeDriver();	 
+		
+		main = new MainPage(driver);	
+		
+	}
+	
+	@AfterTest
+	public void Close(){
+	
+		main.closeBrowser();	
+	}
+	
+
+}
+
+

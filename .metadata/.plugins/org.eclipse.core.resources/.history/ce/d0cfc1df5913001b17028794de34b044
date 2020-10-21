@@ -1,0 +1,43 @@
+package SDET.AutomationPractice;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+
+public class BaseTest {
+	
+	public WebDriver driver;
+	LoginPage main;
+	 
+	
+	@BeforeTest
+	public void initial(){
+		System.setProperty("webdriver.chrome.driver", "C:\\Work Space\\AutomationPractice\\resources\\chromedriver_win32\\chromedriver.exe");
+		 
+		// Initialize browser
+		driver =new ChromeDriver();	
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		
+		// Maximize browser		 
+		driver.manage().window().maximize();
+		
+		
+		
+		main = new LoginPage(driver);
+		
+		
+		
+	}
+	
+	@AfterTest
+	public void closeBrowser() {
+		driver.quit();
+	}
+	
+
+}
+
+

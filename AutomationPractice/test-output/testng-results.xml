@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2020-10-21T14:41:58 CDT" name="Default suite" finished-at="2020-10-21T14:42:33 CDT" duration-ms="34269">
+    <groups>
+    </groups>
+    <test started-at="2020-10-21T14:41:58 CDT" name="Default test" finished-at="2020-10-21T14:42:33 CDT" duration-ms="34269">
+      <class name="SDET.AutomationPractice.MainTest">
+        <test-method is-config="true" signature="initial()[pri:0, instance:SDET.AutomationPractice.MainTest@45b9a632]" started-at="2020-10-21T14:41:58 CDT" name="initial" finished-at="2020-10-21T14:42:03 CDT" duration-ms="4151" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initial -->
+        <test-method signature="createAccount(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:SDET.AutomationPractice.MainTest@45b9a632]" started-at="2020-10-21T14:42:04 CDT" name="createAccount" data-provider="Sheet1" finished-at="2020-10-21T14:42:23 CDT" duration-ms="18215" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Test 1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Mr]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Neo]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Andorson]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Spain#1234]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[1/10/1988]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Yes]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Yes]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[Pickes]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[4532]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[Lake Dr]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[Naperville]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[Illinois]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[60043]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[United States]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[Nothing]]>
+              </value>
+            </param>
+            <param index="16">
+              <value>
+                <![CDATA[4033451267]]>
+              </value>
+            </param>
+            <param index="17">
+              <value>
+                <![CDATA[6305993050]]>
+              </value>
+            </param>
+            <param index="18">
+              <value>
+                <![CDATA[54333]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createAccount -->
+        <test-method signature="createAccount(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:SDET.AutomationPractice.MainTest@45b9a632]" started-at="2020-10-21T14:42:23 CDT" name="createAccount" data-provider="Sheet1" finished-at="2020-10-21T14:42:32 CDT" duration-ms="9826" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Test 2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Mrs]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Jena]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Takoore]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Chin&675]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[3/8/1973]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[no]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[yes]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[Bamboo]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[3442, Jafferson Ave]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[Apr 3D]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[Chicago]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[Illinois]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[60043]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[United States]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[Have a fun]]>
+              </value>
+            </param>
+            <param index="16">
+              <value is-null="true"/>
+            </param>
+            <param index="17">
+              <value>
+                <![CDATA[6305993050]]>
+              </value>
+            </param>
+            <param index="18">
+              <value>
+                <![CDATA[NewYork Street]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createAccount -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:SDET.AutomationPractice.MainTest@45b9a632]" started-at="2020-10-21T14:42:32 CDT" name="closeBrowser" finished-at="2020-10-21T14:42:33 CDT" duration-ms="167" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- SDET.AutomationPractice.MainTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

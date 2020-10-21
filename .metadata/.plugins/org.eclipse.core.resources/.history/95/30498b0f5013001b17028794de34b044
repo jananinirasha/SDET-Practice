@@ -1,0 +1,42 @@
+package SDET.AutomationPractice;
+
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+
+public class MainTest extends BaseTest{
+	
+	@Test
+	
+	public void createAccount() {
+		
+		LoginPage login = new LoginPage(driver);
+		AccountPage account = new AccountPage(driver);
+		DetailPage detail = new DetailPage(driver);
+		MyPage myPage = new MyPage(driver);
+		
+		//Open URL
+		driver.get("http://automationpractice.com/index.php");
+		
+		//Click on Login Button
+		login.clickLogin();
+		
+		//Enter email address and click Create button
+		account.enterEmailAddress();
+		account.clickCreateAccount();
+		
+		//Register User
+		detail.fillPersonalInfo(titile, firstName, lastName, passWd, birthDay, newsLetter, option);
+		detail.fillPersonalInfo(titile, firstName, lastName, passWd, birthDay, newsLetter, option);
+		detail.doRegistration();
+		
+		// Welcome Page Verification
+		Assert.assertEquals(myPage.verifyWelcome(), "Welcome to your account. Here you can manage all of your personal information and orders.");
+		
+		
+		
+		
+	}
+	
+
+}
